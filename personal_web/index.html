@@ -3,27 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rhys — Portfolio</title>
+  <title>Rhys Tran — Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section id="hero" class="hero">
+  <!-- Nav bar -->
+  <nav class="nav">
+    <span class="nav__name">Rhys Tran</span>
+    <div class="nav__links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero">
     <div class="hero__inner">
-      <div class="hero__photo">
-        <span class="hero__initials">RT</span>
+
+      <!-- Left column: text -->
+      <div class="hero__text">
+        <span class="badge">Year 11 &middot; New Zealand</span>
+
+        <h1 class="hero__heading">Hi, I'm Rhys.</h1>
+
+        <p>I'm 16 and in Year 11 here in New Zealand. I like figuring out how things on a screen actually work — and then building my own version of them.</p>
+
+        <p>Right now I'm learning HTML, CSS and Python. Outside of that I'm into Vietnamese food, and I'd happily eat pho every day of the week.</p>
+
+        <p>I'm looking for part-time work where I can be useful, keep learning, and get better at the things I'm building.</p>
       </div>
 
-      <span class="hero__badge">Currently Year 11</span>
+      <!-- Right column: image cluster -->
+      <div class="hero__image">
+        <div class="image-cluster">
+          <img class="profile-photo" src="images/profile.jpg" alt="Photo of Rhys Tran">
+          <img class="sticker sticker--1" src="images/sticker1.jpg" alt="">
+          <img class="sticker sticker--2" src="images/sticker2.jpg" alt="">
+          <img class="sticker sticker--3" src="images/sticker3.jpg" alt="">
+        </div>
+      </div>
 
-      <h1 class="hero__heading">Hi, I'm Rhys.</h1>
     </div>
   </section>
+
+  <!-- Coral divider bar -->
+  <div class="divider"></div>
 
 </body>
 </html>
