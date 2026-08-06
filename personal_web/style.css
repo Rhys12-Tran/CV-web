@@ -50,7 +50,7 @@ body {
 
 /* ---------- Hero section ---------- */
 .hero {
-  padding: 80px 32px;
+  padding: 90px 32px 0; 
 }
 
 .hero__inner {
@@ -62,7 +62,7 @@ body {
   gap: 48px;
 }
 
-/* Left column: text */
+/* Left column */
 .hero__text {
   flex: 1 1 420px;
 }
@@ -77,37 +77,85 @@ body {
   margin-bottom: 20px;
 }
 
+
 .hero__heading {
   font-family: 'Spectral', serif;
-  font-size: 58px;
-  font-weight: 600;
+  font-size: 68px; 
+  font-weight: 700;
   color: #3A2E27;
-  line-height: 1.15;
-  margin: 0 0 24px 0;
+  line-height: 1.1;
+  margin: 0 0 28px 0;
 }
+
 
 .hero__text p {
-  font-size: 16px;
-  line-height: 1.7;
-  margin: 0 0 18px 0;
+  font-size: 17px; 
+  line-height: 1.75;
+  margin: 0 0 20px 0;
+  color: #3A2E27; 
 }
 
-/* Right column: image cluster */
+/* CTA buttons */
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #C9552F;
+  color: #FBF3E9;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  display: inline-block;
+  border: 2px solid #C9552F;
+  color: #C9552F;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #C9552F;
+  color: #FBF3E9;
+}
+
+/* Right column */
 .hero__image {
-  flex: 1 1 320px;
+  flex: 1 1 360px; 
   display: flex;
   justify-content: center;
 }
 
+/* FIXED: cluster was too small — bumped to 380px to match reference */
 .image-cluster {
   position: relative;
-  width: 320px;
-  height: 320px;
+  width: 380px;
+  height: 380px;
 }
 
+/* FIXED: profile photo was too small */
 .profile-photo {
-  width: 180px;
-  height: 180px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   border: 4px solid #FBF3E9;
   object-fit: cover;
@@ -117,40 +165,45 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* FIXED: stickers were too small */
 .sticker {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   box-shadow: 0 6px 14px rgba(58, 46, 39, 0.25);
   position: absolute;
 }
 
 .sticker--1 {
-  top: 0;
-  left: 10px;
+  top: 20px;
+  left: 40px;        
   transform: rotate(-8deg);
 }
 
 .sticker--2 {
-  top: 20px;
-  right: 0;
+  top: 30px;
+  right: 30px;       
   transform: rotate(6deg);
 }
 
 .sticker--3 {
-  bottom: 10px;
-  left: 30px;
+  bottom: 40px;      
+  left: 40px;        
   transform: rotate(-4deg);
 }
 
 /* ---------- Coral divider ---------- */
+
 .divider {
+  display: block;
   width: 100%;
-  height: 8px;
+  height: 37px;
   background-color: #C9552F;
+  margin: 0; 
+  padding: 0;
 }
 
-/* ---------- Mobile layout ---------- */
+/* ---------- Mobile ---------- */
 @media (max-width: 768px) {
   .nav {
     padding: 16px 20px;
@@ -173,22 +226,193 @@ body {
     font-size: 40px;
   }
 
+  .hero__actions {
+    justify-content: center;
+  }
+
   .hero__image {
     justify-content: center;
   }
 
   .image-cluster {
-    width: 180px;
-    height: 180px;
+    width: 320px;
+    height: 320px;
   }
 
   .profile-photo {
-    position: static;
-    transform: none;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    transform: translate(-50%, -50%);
   }
 
-  /* Hide sticker photos on mobile, keep just the profile photo */
   .sticker {
     display: none;
+  }
+}
+
+/* ---------- Projects section ---------- */
+.projects {
+  padding: 80px 32px;
+  scroll-margin-top: 88px; /* stops nav bar covering the heading when you click the link */
+}
+
+.projects__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section heading: left-aligned Spectral with coral underline */
+.section-heading {
+  font-family: 'Spectral', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A2E27;
+  margin: 0 0 8px 0;
+  padding-bottom: 10px;
+  /* coral underline — only ~60px wide, not full width */
+  border-bottom: 3px solid #C9552F;
+  display: inline-block;
+}
+
+/* Coral uppercase label above each subsection e.g. "FEATURED" */
+.subsection-label {
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #C9552F;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 40px 0 16px 0;
+}
+
+/* Featured row: 2 equal columns */
+.projects__featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Grids */
+.projects__grid {
+  display: grid;
+  gap: 24px;
+}
+
+.projects__grid--2col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects__grid--3col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: #ffffff;
+  border: 1px solid #EAD9C4;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* keeps image corners clipped to the card radius */
+}
+
+/* Card image area — 16:10 ratio */
+.card__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Featured card: dark background */
+.card__image--dark {
+  background-color: #3A2E27;
+}
+
+/* Featured card: coral background */
+.card__image--coral {
+  background-color: #C9552F;
+}
+
+/* Regular card: placeholder state */
+.card__image--placeholder {
+  background-color: #F6E3D4;
+}
+
+/* Big initials on featured cards */
+.card__initials {
+  font-family: 'Spectral', serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #FBF3E9;
+}
+
+/* Placeholder icon for non-featured cards */
+.card__placeholder-icon {
+  font-size: 28px;
+  opacity: 0.4;
+  color: #3A2E27;
+}
+
+/* Text area inside every card */
+.card__body {
+  padding: 20px;
+}
+
+.card__title {
+  font-family: 'Spectral', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3A2E27;
+  margin: 0 0 8px 0;
+}
+
+.card__desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3A2E27;
+  margin: 0 0 14px 0;
+}
+
+/* Tag pills */
+.card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #F6E3D4;
+  color: #C9552F;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Karla', sans-serif;
+}
+
+/* Small cards (Other things row) — no image, just body */
+.card--small .card__body {
+  padding: 20px;
+}
+
+/* ---------- Projects mobile ---------- */
+@media (max-width: 768px) {
+  .projects {
+    padding: 56px 20px;
+  }
+
+  .projects__featured {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__grid--2col {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__grid--3col {
+    grid-template-columns: 1fr 1fr;
   }
 }
