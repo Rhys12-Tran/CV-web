@@ -254,7 +254,7 @@ body {
 /* ---------- Projects section ---------- */
 .projects {
   padding: 80px 32px;
-  scroll-margin-top: 88px; /* stops nav bar covering the heading when you click the link */
+  scroll-margin-top: 88px; 
 }
 
 .projects__inner {
@@ -262,7 +262,7 @@ body {
   margin: 0 auto;
 }
 
-/* Section heading: left-aligned Spectral with coral underline */
+
 .section-heading {
   font-family: 'Spectral', serif;
   font-size: 36px;
@@ -270,12 +270,12 @@ body {
   color: #3A2E27;
   margin: 0 0 8px 0;
   padding-bottom: 10px;
-  /* coral underline — only ~60px wide, not full width */
+  
   border-bottom: 3px solid #C9552F;
   display: inline-block;
 }
 
-/* Coral uppercase label above each subsection e.g. "FEATURED" */
+
 .subsection-label {
   font-family: 'Karla', sans-serif;
   font-size: 12px;
@@ -286,7 +286,7 @@ body {
   margin: 40px 0 16px 0;
 }
 
-/* Featured row: 2 equal columns */
+
 .projects__featured {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -316,29 +316,23 @@ body {
   overflow: hidden; /* keeps image corners clipped to the card radius */
 }
 
-/* Card image area — 16:10 ratio */
+
 .card__image {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    min-height: 0;        /* add this line */
 }
 
-/* Featured card: dark background */
-.card__image--dark {
-  background-color: #3A2E27;
+/* The actual <img> tag inside the container */
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        
+    display: block;           
 }
 
-/* Featured card: coral background */
-.card__image--coral {
-  background-color: #C9552F;
-}
-
-/* Regular card: placeholder state */
-.card__image--placeholder {
-  background-color: #F6E3D4;
-}
 
 /* Big initials on featured cards */
 .card__initials {
