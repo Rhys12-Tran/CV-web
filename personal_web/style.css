@@ -434,3 +434,60 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- Contact section ---------- */
+/* Full-width dark section — same colour as the nav bar.
+   scroll-margin-top matches every other section so the sticky nav
+   never covers the "Let's talk" heading when you jump here from a link. */
+.contact {
+  background-color: #3A2E27;
+  padding: 80px 32px;
+  text-align: center;
+  scroll-margin-top: 88px;
+}
+
+/* Same max-width + auto-margin centering trick as .projects__inner
+   and .skills__inner — keeps the content readable on wide screens
+   without needing to touch the section's own full-width background. */
+.contact__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact__heading {
+  font-family: 'Spectral', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #FBF3E9;
+  margin: 0 0 16px 0;
+}
+
+.contact__text {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #F6E3D4;
+  margin: 0 0 32px 0;
+}
+
+/* ---------- Contact mobile ---------- */
+@media (max-width: 768px) {
+  .contact {
+    padding: 56px 20px;
+  }
+}
+
+/* ---------- Footer ---------- */
+/* Slightly darker strip below Contact, matches the screenshot's
+   thin divider line between the two. */
+.footer {
+  background-color: #3A2E27;
+  border-top: 1px solid rgba(251, 243, 233, 0.15);
+  padding: 20px 32px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 13px;
+  color: #F6E3D4;
+}
