@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhys Tran — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nav bar -->
+  <nav class="nav">
+    <span class="nav__name">Rhys Tran</span>
+    <div class="nav__links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero__inner">
+
+      <!-- Left column: text -->
+      <div class="hero__text">
+        <span class="badge">Year 11 &middot; New Zealand</span>
+
+        <h1 class="hero__heading">Hi, I'm Rhys.</h1>
+
+        <p>I'm 16 and in Year 11 here in New Zealand. I like figuring out how things on a screen actually work — and then building my own version of them.</p>
+
+        <p>Right now I'm learning HTML, CSS and Python. Outside of that I'm into Vietnamese food, and I'd happily eat pho every day of the week.</p>
+
+      
+      </div>
+
+      <!-- Right column: image cluster -->
+      <div class="hero__image">
+        <div class="image-cluster">
+          <!-- YOUR PROFILE PHOTO — replace images.jpg with your actual photo -->
+          <img class="profile-photo" src="image/images.jpg" alt="Rhys Tran">
+          <!-- STICKER 1 — replace images (1).jpg with your sticker image -->
+          <img class="sticker sticker--1" src="image/images (1).jpg" alt="">
+          <!-- STICKER 2 — replace images.png with your sticker image -->
+          <img class="sticker sticker--2" src="image/images.png" alt="">
+          <!-- STICKER 3 — replace images__1_-removebg-preview.png with your sticker image -->
+          <img class="sticker sticker--3" src="image/images__1_-removebg-preview.png" alt="">
+        </div>
+      </div>
+
+      <!-- Coral divider bar -->
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <div class="projects__inner">
+
+      <h2 class="section-heading">Projects and things I like</h2>
+
+      <!-- ============================================================
+           WEBSITE CARDS
+      ============================================================ -->
+      <p class="subsection-label">Website</p>
+      <div class="projects__featured">
+
+        <!-- Scotland Website -->
+        <div class="card card--featured">
+          <div class="card__image">
+            <img src="image/My Scotland.PNG" alt="Screenshot of Scotland Website">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Scotland Website</h3>
+            <p class="card__desc">A website about Scotland I built from a Figma design for my NCEA web development assessment, coding the layout in HTML and CSS by hand.</p>
+            <div class="card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year 10 Website -->
+        <div class="card card--featured">
+          <div class="card__image">
+            <img src="image/Year 10 web.PNG" alt="My year 10 website">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Year 10 Website</h3>
+            <p class="card__desc">This is my lovely first website. <br> Please visit to it: https://rhys12-tran.github.io/MyYear10Website/.</p>
+            <div class="card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ============================================================
+           OUTSIDE SCHOOL CARDS
+      ============================================================ -->
+      <p class="subsection-label">Outside school project</p>
+      <div class="projects__featured">
+
+        <!-- Sign Language Translator -->
+        <div class="card card--featured">
+          <div class="card__image">
+            <img src="image/sign_languge.jpg" alt="Screenshot of Sign Language Translator">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Sign Language Translator</h3>
+            <p class="card__desc">This is my own project built with AI. The purpose is to help people who don't know sign language be able to understand it.</p>
+            <div class="card__tags">
+              <span class="tag">Claude AI</span>
+              <span class="tag">Webcam</span>
+              <span class="tag">Kimi AI</span>
+              <span class="tag">Spark AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bookmark Competition -->
+        <div class="card card--featured">
+          <div class="card__image">
+            <img src="image/bookmark.png" alt="Bookmark competition entry">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Bookmark Competition</h3>
+            <p class="card__desc">A bookmark I designed myself. I used Claude to make a plan and ChatGPT to generate a reference image, then drew it by hand. I got first place in this competition.</p>
+            <div class="card__tags">
+              <span class="tag">AI</span>
+              <span class="tag">Hand-drawn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ============================================================
+           FOOD CARDS
+      ============================================================ -->
+      <p class="subsection-label">Food I love</p>
+      <div class="projects__grid projects__grid--2col">
+
+        <!-- Pho Bo -->
+        <div class="card">
+          <div class="card__image">
+            <img src="image/pho.jpg" alt="Vietnamese Pho Bo">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Vietnamese Pho Bo</h3>
+            <p class="card__desc">A fragrant noodle soup made with clear, slow-simmered bone broth, soft flat rice noodles, and tender meat like beef or chicken.</p>
+            <div class="card__tags">
+              <span class="tag">Broth</span>
+              <span class="tag">Noodles</span>
+              <span class="tag">Meat</span>
+              <span class="tag">Toppings</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bun Bo Hue -->
+        <div class="card">
+          <div class="card__image">
+            <img src="image/bun bo.jpg" alt="Bun Bo Hue">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Bun Bo Hue</h3>
+            <p class="card__desc">A robust, spicy, and deeply aromatic beef noodle soup from central Vietnam. It features a complex broth that balances sweet, salty, and spicy flavours with a strong hint of lemongrass.</p>
+            <div class="card__tags">
+              <span class="tag">Lemongrass</span>
+              <span class="tag">Spicy chili oil</span>
+              <span class="tag">Shrimp paste</span>
+              <span class="tag">Toppings</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banh Cuon -->
+        <div class="card">
+          <div class="card__image">
+            <img src="image/banh cuon.jpg" alt="Banh Cuon steamed rice rolls">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Banh Cuon (Steamed Rice Rolls)</h3>
+            <p class="card__desc">A delicate northern Vietnamese dish of thin, translucent rice sheets rolled around a savoury filling. Incredibly light and silky, typically eaten for breakfast or lunch.</p>
+            <div class="card__tags">
+              <span class="tag">Ground pork</span>
+              <span class="tag">Shrimp paste</span>
+              <span class="tag">Vietnamese ham</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banh Mi -->
+        <div class="card">
+          <div class="card__image">
+            <img src="image/banh mi.jpg" alt="Banh Mi sandwich">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Banh Mi</h3>
+            <p class="card__desc">A world-famous sandwich that fuses French and Vietnamese flavours. A light, crispy baguette packed with savoury meats, creamy spreads, and bright pickled vegetables.</p>
+            <div class="card__tags">
+              <span class="tag">Pate</span>
+              <span class="tag">Pickled veggies</span>
+              <span class="tag">Crispy baguette</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ============================================================
+           GAMES CARDS
+      ============================================================ -->
+      <p class="subsection-label">My favourite video games</p>
+      <div class="projects__featured">
+
+        <!-- Spider-Man -->
+        <div class="card card--featured">
+          <div class="card__image">
+            <img src="image/spiderman.jpg" alt="Marvel's Spider-Man">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Marvel's Spider-Man</h3>
+            <p class="card__desc">Marvel's Spider-Man lets you swing fast through a bright New York City and fight bad guys with cool web moves.</p>
+            <div class="card__tags">
+              <span class="tag">Action</span>
+              <span class="tag">Open world</span>
+              <span class="tag">Marvel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GTA 4 -->
+        <div class="card card--featured">
+          <div class="card__image">
+            <img src="image/GTA 4.jpg" alt="GTA 4">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">GTA 4</h3>
+            <p class="card__desc">GTA 4 is a dark game about Niko Bellic, an immigrant who tries to live a new life in a gritty, realistic city full of crime and tough choices.</p>
+            <div class="card__tags">
+              <span class="tag">Open world</span>
+              <span class="tag">Story</span>
+              <span class="tag">Crime</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Coral divider bar -->
+   <div class="divider"></div>
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section class="skills" id="skills">
+    <div class="skills__inner">
+
+      <h2 class="section-heading">Skills</h2>
+
+      <div class="skills__grid">
+
+      <!-- Card 1: -->
+        <div class="skill-card">
+          <p class="subsection-label">Professional eating </p>
+          <div class="card__tags">
+            <span class="tag">10 bowl of rice </span>
+            <span class="tag">5 bowl of noodles</span>
+            <span class="tag">pasta</span>
+          </div>
+        </div> 
+
+        <!-- Card 3: Tools -->
+        <div class="skill-card">
+          <p class="subsection-label">Tools</p>
+          <div class="card__tags">
+            <span class="tag">Figma</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Git</span>
+            <span class="tag">AI</span>
+            <span class="tag">Capcut</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Languages -->
+        <div class="skill-card">
+          <p class="subsection-label">Languages</p>
+          <div class="card__tags">
+            <span class="tag">Vietnamese</span>
+            <span class="tag">English</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Coral divider bar -->
+  <div class="divider"></div>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       Full-width dark section, matches the nav bar colour.
+       Uses .btn-primary (already coral) so we don't need new button CSS.
+  ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <h2 class="contact__heading">Let's talk</h2>
+      <p class="contact__text">If you're an employer looking for a keen part-time worker, I'd love to hear from you.</p>
+      <!-- YOUR EMAIL — replace rhys.tran@example.com with your real email before this goes live -->
+      <a class="btn-primary" href="mailto:24613@burnside.school.nz">Email me</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <p>&copy; 2026 Rhys Tran</p>
+  </footer>
+
+</body>
+</html>
