@@ -1,0 +1,18 @@
+1. Aesthetics: 5/6
+Meets: Contrast, Alignment, Proximity, Consistency and Balance.
+Positive: I found the cards easy to scan because they're in a neat two-column grid with the same layout each time (photo, title, description, tags). The food photos look great and match the warm cream colours.
+Suggestion: The "Year 10 Website" card still has the pink header and fancy font, so it doesn't match the rest. Also the coral bar under the bio is still a big empty block. Make it a thin line instead.
+2. Functionality: 3/5
+Meets: Scrolling, Page Load and Responsive.
+Positive: I liked that every image loads with no broken pictures, and the page scrolls smoothly on desktop.
+Suggestion: I can't see the nav bar, Skills section, Contact section or footer in this screenshot. Are they missing or just cropped? If they were removed, add them back, because your Version 2 nav had Projects, Skills and Contact. Then click every link to check it works.
+3. Usability: 2/4
+Meets: Find Info (partly).
+Positive: I found the page easy to understand because each card has a photo and a short title.
+Suggestion: I found the text on the cards very small. Make the descriptions and tags at least 15px. Also, the heading "Projects and things I like" mixes school work, food and games. Use clear labels for each group (Web projects, Food I love, Games I play). Check that every image has alt text.
+4. Bonus: 2/3
+Meets: Engaging.
+Positive: I liked the food section because it shows your personality and makes the site feel like you.
+Suggestion: The site doesn't say you want part-time work, and I can't see a contact button. Add one line in the bio and a "Contact me" button. Also run the site through validator.w3.org, because your assignment asks for it.
+Total: 12/18
+The cards and photos look good, but this scores lower than Version 2 because the nav and contact seem to be missing and the text is small. If those parts exist, your score goes up to about 15 or 16.
